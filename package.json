@@ -1,0 +1,21 @@
+{
+  "name": "modular-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NEXT_PRIVATE_LOCAL_WEBPACK=true concurrently \"pnpm --filter dashboard-shell dev\" \"pnpm --filter notes-widget dev\" \"pnpm --filter analytics-widget dev\" \"pnpm --filter ai-chat dev\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.6.3",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "next": "14.2.3",
+    "webpack": "^5.102.1"
+  }
+}
